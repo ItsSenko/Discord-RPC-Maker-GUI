@@ -19,6 +19,7 @@ This simeple console application is meant to let you have a custom RPC status on
 
 ## Usage
 
+![Usage](https://i.imgur.com/FP7WZkw.png)
 ![Usage](https://i.imgur.com/UA2be2R.png)
 ![Usage](https://i.imgur.com/j1iwjxM.png)
 
