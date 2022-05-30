@@ -19,6 +19,19 @@ This simeple console application is meant to let you have a custom RPC status on
 
 ## Usage
 
+### How To
+- First go to [DiscordAPI.com](https://discordapi.com)
+- Go to Applications and make a new application ![New Application](https://i.imgur.com/f3EwKjl.png)
+- Your new Application should now appear in your Applications 
+- ![Your Applications](https://i.imgur.com/OJqTl5A.png)
+- Click on it and scroll down to find the Application ID ![Applications ID](https://i.imgur.com/bolB6UD.png)
+- You will use that ID inside the RPC Maker
+- If you wish to add Images to your RPC then on the right find Rich Presence and Select Art Assets ![Art Assets](https://i.imgur.com/YjIolYY.png)
+- Add a new Asset to the Art Assets, Whatever you name that art asset is the ID for that asset
+- That art asset ID can be used for both the Large and Small Image ID
+- If you Wish to add buttons you must have a URL set for both of them, and they are valid URL's
+- Then you are good to go! Set all proper setting in the RPC Maker and let it do its magic
+
 ![Usage](https://i.imgur.com/FP7WZkw.png)
 ![Usage](https://i.imgur.com/UA2be2R.png)
 ![Usage](https://i.imgur.com/j1iwjxM.png)
