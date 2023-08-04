@@ -5,8 +5,7 @@ This simeple console application is meant to let you have a custom RPC status on
 
 
 
-[![Discord Server](https://img.shields.io/discord/914575394735284344?color=purple&label=Discord&style=plastic)](https://discord.gg/fxpPgHqwUr)[![Twitter Follow](https://img.shields.io/twitter/follow/SenkoLittle?color=purple&label=Follow%20me%20%40SenkoLittle&style=plastic)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FItsSenko&screen_name=SenkoLittle)
-![Profile views](https://gpvc.arturio.dev/ItsSenko)
+[![Discord Server](https://img.shields.io/discord/914575394735284344?color=purple&label=Discord&style=plastic)](https://discord.gg/fxpPgHqwUr) [![Twitter Follow](https://img.shields.io/twitter/follow/SenkoPur?style=social&labelColor=%23a200ed&color=%23000000)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FItsSenko&screen_name=SenkoPur)
 
 
 ## Features
