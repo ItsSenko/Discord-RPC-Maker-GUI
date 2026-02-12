@@ -48,7 +48,7 @@ namespace DiscordRPCMakerGUI
                 string btn1URL = null;
                 string btn2Name = null;
                 string btn2URL = null;
-                DiscordRPC.Button[] buttons = new DiscordRPC.Button[2];
+                List<DiscordRPC.Button> buttons = new List<DiscordRPC.Button>();
                 if (HasKey(ClientIDBox.Text))
                 {
                     MessageBox.Show("You must set a Client ID", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -85,13 +85,10 @@ namespace DiscordRPCMakerGUI
                     btn2Name = this.BN2Box.Text;
                     btn2URL = this.BU2Box.Text;
                     Uri.TryCreate(btn2URL, UriKind.Absolute, out var uri2);
-                    if (HasKey(btn1Name) || HasKey(btn2Name))
-                    {
-                        MessageBox.Show("You must set both buttons if you wish to have any buttons", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                    buttons[0] = new DiscordRPC.Button() { Label = btn1Name, Url = uri1.AbsoluteUri };
-                    buttons[1] = new DiscordRPC.Button() { Label = btn2Name, Url = uri2.AbsoluteUri };
+                    if (!string.IsNullOrEmpty(btn1Name) && btn1Name != "Button Name 1")
+                        buttons.Add(new DiscordRPC.Button() { Label = btn1Name, Url = uri1.AbsoluteUri });
+                    if (!string.IsNullOrEmpty(btn2Name) && btn2Name != "Button Name 2")
+                        buttons.Add(new DiscordRPC.Button() { Label = btn2Name, Url = uri2.AbsoluteUri });
                 }
                 if (client == null)
                     client = new DiscordRpcClient(id);
@@ -137,7 +134,7 @@ namespace DiscordRPCMakerGUI
                     }
                     if (buttons[0] != null)
                     {
-                        rp.Buttons = buttons;
+                        rp.Buttons = buttons.ToArray();
                     }
                     client.SetPresence(rp);
                     if (!client.IsInitialized)
